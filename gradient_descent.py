@@ -29,8 +29,9 @@ performance = 0
 for i in range(10):
     print()
     coordinates = np.array([x1, y1])
-    coordinates = gradient_descent(coordinates, step1)
+    coordinates = gradient_descent(coordinates, step3)
     temp_performance = (-4 - coordinates[0]) + abs(6 - coordinates[1])
+    print(temp_performance)
     print("Global minimum at (%.3f,%.3f)" % (coordinates[0], coordinates[1]))
     del coordinates
     print("Trial %d: %.3f" % (i+1, temp_performance))
